@@ -1,0 +1,190 @@
+respawnTemplates[] = { "MenuInventory", "MenuPosition" };
+respawnTemplatesCiv[] = { "Instant" };
+
+author				= "Sigma Security Group Staff";
+OnLoadName			= "Sigma Security Group";
+OnLoadMission		= "Sigma Security Group";
+
+class CfgRoles
+{
+	class ROLE1
+	{
+		displayName = "Operator";
+	};
+};
+
+class CfgRespawnInventory
+{
+class WEST1
+	{
+		displayName = "Operator"; // Name visible in the menu
+		role = "ROLE1";
+		
+		uniformClass = "U_I_G_Story_Protagonist_F";
+		backpack = "B_AssaultPack_mcamo";
+		weapons[] = {
+			"rhs_weap_mk18_KAC_bk",
+			"rhsusf_weap_glock17g4",
+			"Rangefinder",
+			"Throw",
+			"Put"
+		};
+		magazines[] = {
+			
+		};
+		items[] = {
+			"ACE_EarPlugs",
+			"ACE_Flashlight_KSF1",
+			"ACE_MapTools",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_IR_Strobe_Item",
+			"ACE_microDAGR",
+			"ACE_EntrenchingTool",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_adenosine",
+			"ACE_adenosine",
+			"ACE_adenosine",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_splint",
+			"ACE_splint",
+			"ACE_splint",
+			"ACE_splint",
+			"ACE_bodyBag",
+			"rhsusf_acc_nt4_black",
+			"ACE_30Rnd_556x45_Stanag_Mk318_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk318_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk318_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk318_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk318_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk318_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk318_mag",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_SmokeShell",
+			"UK3CB_BAF_SmokeShell"
+		};
+		linkedItems[] = {
+			"V_PlateCarrier2_rgr",
+			"rhsusf_opscore_mar_ut_pelt",
+			"TFAR_anprc152",
+			"ItemCompass",
+			"ItemMap",
+			"ACE_Altimeter",
+			"ItemGPS",
+			"rhsusf_acc_eotech_xps3",
+			"ACE_NVG_Wide"};
+	
+	};
+};
+
+class cfgFunctions
+{
+	class SSG
+	{
+		class rerporting
+		{
+			file = "functions";
+			class clientExec {};
+			class serverExec {};
+		};
+	};
+};
+
+class CfgRemoteExec
+{
+	class Functions
+	{
+		class ssg_rep_fnc_serverExec
+		{
+			allowedTargets = 2;
+			jip = 0;
+		};
+		class ssg_rep_fnc_clientExec
+		{
+			allowedTargets = 1;
+			jip = 0;
+		};
+	};
+};
+
+class Params
+{
+	//if acre language values or texts or param name from the following is changed
+	//this change also needs to be reflected in the setLanguageParam function
+
+	class ACRE_Babel
+	{
+		title = "Enable Babel";
+		values[] = {0,1};
+		texts[] = {"Disable","Enable"};
+		default = 0;
+	};
+	class ACRE_Blufor
+	{
+		title = "Blufor Language(s)";
+		values[] = {0,1,2,3};
+		texts[] = {"Blufor", "Blufor & Indep", "Blufor & Opfor", "All"};
+		default = 0;
+	};
+	class ACRE_Opfor
+	{
+		title = "Opfor Language(s)";
+		values[] = {0,1,2,3};
+		texts[] = {"Opfor", "Opfor & Indep", "Opfor & Blufor", "All"};
+		default = 0;
+	};
+	class ACRE_Indep
+	{
+		title = "Indep Language(s)";
+		values[] = {0,1,2,3};
+		texts[] = {"Indep", "Indep & Blufor", "Indep & Opfor", "All"};
+		default = 0;
+	};
+};
+
+
+class CfgMusic
+{
+	tracks[] = {};
+
+	class intro
+	{
+		// display name
+		name	= "intro";
+		// filename, volume, pitch
+		sound[]	= { "sfx\intro.ogg", db + 0, 1.0 };
+	};
+	
+	class kerosene
+	{
+		name = "kerosene";
+		sound[] = {"sfx\kerosene.ogg", db + 0, 1.0};
+	};
+
+	class phonk
+	{
+		name = "phonk";
+		sound[] = {"sfx\nofaith.ogg", db + 0, 1.0};
+	};
+};

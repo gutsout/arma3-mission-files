@@ -1,0 +1,3 @@
+_this attachTo [tgttank]; # build cope cage
+playMusic "song1"; # play sound
+playMusic "";

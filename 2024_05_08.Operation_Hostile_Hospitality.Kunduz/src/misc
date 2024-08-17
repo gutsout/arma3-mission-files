@@ -1,0 +1,1 @@
+_this addAction ["Trace Signal", "src\direction.sqf"];
