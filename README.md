@@ -1,10 +1,10 @@
-# Arma 3 Mission Files
-This repository contains the source files for various Arma 3 missions I've hosted, showcasing experiments with in-game cinematics, briefings, triggers, and music. These source files are provided as-is and can be easily converted into .pbo mission files using PBO Manager for server upload.
+# ArmA 3 Mission Files
+This repository contains the source files for various ArmA 3 missions I've hosted, showcasing experiments with in-game cinematics, briefings, triggers, and music. These source files are provided as-is and can be easily converted into .pbo mission files using PBO Manager for server upload.
 
 In the near future, I plan to document the features available in these sources and provide short guides to help others implement similar functionalities.
 
 ## How Tos
-### Add Custom Music or Sound
+### Add Custom Music or Sound to ArmA3 Mission File
 1. Create a separate directory (e.g. `music`, `sfx`) to keep all the sounds together
 2. Find and download the sounds you want to add to your mission.
 3. Convert the sound to `.ogg` format suitable to ArmA 3.\
@@ -33,5 +33,5 @@ class CfgMusic
 ```
 
 Examples in mission files:\
-OP Wunderwaffe: [CfgMusic](../blob/main/2024_06_23.Operation_Wunderwaffe.VTF_Korsac/description.ext#L167), [music dir](../tree/main/2024_06_23.Operation_Wunderwaffe.VTF_Korsac/music/)\
-OP Hostile Hospitality: [CfgMusic](../blob/main/2024_05_08.Operation_Hostile_Hospitality.Kunduz/description.ext#L167), [sfx dir](../tree/main/2024_05_08.Operation_Hostile_Hospitality.Kunduz/sfx)
+OP Wunderwaffe: [CfgMusic](../main/2024_06_23.Operation_Wunderwaffe.VTF_Korsac/description.ext#L167), [music dir](https://github.com/gutsout/arma3-mission-files/tree/main/2024_06_23.Operation_Wunderwaffe.VTF_Korsac/music)
+OP Hostile Hospitality: [CfgMusic](../main/2024_05_08.Operation_Hostile_Hospitality.Kunduz/description.ext#L167), [sfx dir](https://github.com/gutsout/arma3-mission-files/tree/main/2024_05_08.Operation_Hostile_Hospitality.Kunduz/sfx)
