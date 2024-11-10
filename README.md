@@ -33,5 +33,5 @@ class CfgMusic
 ```
 
 Examples in mission files:\
-OP Wunderwaffe: [CfgMusic](../main/2024_06_23.Operation_Wunderwaffe.VTF_Korsac/description.ext#L167), [music dir](https://github.com/gutsout/arma3-mission-files/tree/main/2024_06_23.Operation_Wunderwaffe.VTF_Korsac/music)
+OP Wunderwaffe: [CfgMusic](../main/2024_06_23.Operation_Wunderwaffe.VTF_Korsac/description.ext#L167), [music dir](https://github.com/gutsout/arma3-mission-files/tree/main/2024_06_23.Operation_Wunderwaffe.VTF_Korsac/music)\
 OP Hostile Hospitality: [CfgMusic](../main/2024_05_08.Operation_Hostile_Hospitality.Kunduz/description.ext#L167), [sfx dir](https://github.com/gutsout/arma3-mission-files/tree/main/2024_05_08.Operation_Hostile_Hospitality.Kunduz/sfx)
